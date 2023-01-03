@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Dew</title>
+    <link rel="stylesheet" href="i.css">
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">MOUNTAIN DEW</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About Us</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#content" class="navbar__links" id="content-page">Our Content</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#event" class="navbar__links" id="event-page">Our Event</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact" class="navbar__links" id="contact-page">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__heading">MOUNTAIN DEW</h1>
+                <p class="hero__description">Join us on our journey!</p>
+                <button class="hero__btn"><a href="#about">Explore</a></button>  
+            </div>
+            <div class="hero__img--container">
+                <img src="pic1.png" alt="pic" id="hero__img">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about" id="about">
+        <div class="about__container">
+            <div class="about__img--container">
+                <img src="pic2.png" alt="pic" id="about__img">
+            </div>
+            <div class="about__content">
+                <h1>We are group8 of A01-10-S1-2, and our group is called Mountain Dew.</h1>
+                <p>Here are the members of the group and their roles.</p>
+                <button class="about__btn"><a href="https://www.youtube.com/@mountainDewwy">Visit Channel</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content" id="content">
+        <h1>Our Content<h1> 
+        <div class="content__wrapper">
+            <div class="content__card">
+                <h2>Content Type</h2>
+                <p>We will have a live stream about gaming and how it will affect your behavior.</p>
+            </div>
+            <div class="content__card">
+                <h2>Streaming tools</h2>
+                <p>My groupmates chose Stream Labs obs as our streaming tool.</p>
+            </div>
+            <div class="content__card">
+                <h2>Streaming Platform</h2>
+                <p>We will be using YouTube to stream our content.</p>
+            </div>
+            <div class="content__card">
+                <h2>Target Audience</h2>
+                <p>Our Audience will be our friends, family, and fellow Apec students.
+                    The minimmum number of viewers is 40 and our maximum will be 100.</p>
+            </div>
+            <div class="content__card">
+                <h2>How will we promote our stream?</h2>
+                <p>We will be promoting our stream by making posters and posting them on different social media
+                    platforms and we will be informing our friends and family.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Section -->
+    <div class="event" id="event">
+        <h1>Our Event</h1>
+        <div class="event__container">
+            <div class="event__content">
+                
+            </div>
+        </div>
+         <!-- Slider main container -->
+<div class="swiper">
+ 
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+       
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="pic3.png" alt="pic"></div>
+      <div class="swiper-slide"><img src="pic4.png" alt="pic"></div>
+      <div class="swiper-slide"><img src="pic5.png" alt="pic"></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+ 
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+   </div>
+ 
+ 
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ 
+   <script>
+    const swiper = new Swiper('.swiper', {
+ 
+autoplay:{
+    delay: 3000,
+    disableOnInteraction: false,
+},
+ 
+  loop: true,
+ 
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+ 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+ 
+});
+   </script>
+    </div>
+    
+<!-- Contact Us Section -->
+<div class="contact" id="contact">
+    <h1>Follow us here!</h1>
+    <div class="contact__wrapper">
+        <div class="contact__card">
+            <h2>YouTube</h2>
+            <p>Subscribe to our YouTube channel!</p>
+        </div>
+        <div class="contact__card">
+            <h2>Facebook</h2>
+            <p>Follow us on Facebook!</p>
+        </div>
+        <div class="contact__card">
+            <h2>Instagram</h2>
+            <p>Follow us on Instagram!</p>
+        </div>
+        <div class="contact__card">
+            <h2>Twitter</h2>
+            <p>Follow us on Twitter!</p>
+        </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
